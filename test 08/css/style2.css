@@ -1,0 +1,59 @@
+*{
+    margin:0;
+}
+
+header{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header a{
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #c1c1c1;
+    border-bottom: solid 0.3em;
+    border-bottom-color: #c1c1c1;
+    transition:all 0.2s;
+}
+
+/* 
+Il faut que le footer soit en 3 colonnes
+Il faut que le titre des colonnes soit en bleu, en majuscule en 25px et centré dans la colonne
+Les menu secondaires ne doivent plus avoir de puces
+Il faut retirer le padding des menu secondaires
+Les liens doivent être en noir et ne doivent plus être soulignés
+Les liens doivent passer en vert au survol */
+
+footer{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h2{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    transition:all 0.2s;
+}
+
+footer a:hover{
+    color: green;
+    transition:all 0.2s;
+}

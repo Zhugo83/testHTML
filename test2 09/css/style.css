@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+}
+
+/* General */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Enleve dot */
+ul{
+    list-style: none;
+    padding: 0;
+}
+/*     Header :  */
+/* Taille max : 1440px */
+header{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* List ul en flex */
+header nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* couleur des liens du menu au survol : orange */
+header nav a:hover{
+    color:orange;
+    transition:all 0.2s;
+}
+
+/* Taille du logo : 200px; */
+header a img{
+    width: 200px;
+}
+
+/*  Footer : */
+/* couleur de l'arrière plan : #000 */
+footer{
+    margin: 50px 0px;
+    background-color: #000;
+}
+
+/* Taille maximale du contenu : 1440px
+ */
+footer div{
+    max-width: 1440px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+    margin: auto;
+}
+
+/* Url footer color white */
+footer div article ul li a{
+    color: #fff;
+}
+
+/* taille des titre : 25px */
+footer h2{
+    font-size: 25px;
+    text-align: left;
+}
+
+/* couleur des liens des menus secondaires au survol : rouge
+le lien du footer doit avoir une opacité à 0.7 au survol */
+footer a:hover{
+    color: red;
+    opacity: 70%;
+}
+
+footer > p{
+    text-align: center;
+    background-color: gray;
+    margin: 0px; /* Reset the default margin */
+    padding: 20px;
+}
+
+/* main :
+
+    
+Section 1 : */
+
+main{
+    margin: 10px 0px;
+}
+#section1 article{
+    text-align: left;
+}
+
+/* taille max du contenu : 960px */
+#section1{
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 225px;
+}
+
+/* taille de l'image : 400px */
+#section1 img{
+    width: 400px;
+}
+
+/* Taille de texte du h1 : 45px */
+#section1 h1{
+    font-size: 45px;
+    color:orange
+}
+
+/* taille de texte (p) : 18px */
+#section1 p{
+    font-size: 18px;
+}
+
+/* Taille de texte du bouton : 18px */
+#section1 a{
+    color: orange;
+    font-size: 18px;
+    width: 200px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    border: 1px solid orange; /* Add a border */
+    border-radius: 99px / 100px; /* Set the border radius for left and right sides */
+    padding: 10px 30px;
+    margin: 15px;
+}
+
+/* La couleur de la bordure et du fond du bouton passent en #000 au hover et le texte en #fff */
+#section1 a:hover{
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+#section1 p{
+    margin: 15px;
+}
+
+/*     
+Section 2 :
+
+        
+
+  */
+
+/* Taille du contenu : 1440px */
+#section2{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* taille des titre 3 : 22px */
+#section2 div article h3{
+    text-align: center;
+    font-size: 22px;
+}
+
+#section2 > p{
+    text-align: center;
+}
+
+/* taille du titre 2 : 45px */
+#section2 > h2{
+    font-size: 45px;
+    color: orange;
+    text-align: center;
+}
+
+#section2 div{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+    margin: 0px 15px;
+}
+
+/* taille des paragraphes : 18px */
+#section2 div article p{
+    margin: 15px;
+    font-size: 18px;
+}
+
+#section2 div article a {
+    width: 200px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    border: 1px solid black; /* Add a border */
+    border-radius: 99px / 100px; /* Set the border radius for left and right sides */
+    padding: 10px 30px;
+    margin: 15px;
+}
+
+/* Les liens des colonnes ont une couleur de bordure et de fond orange au hover et le texte en noir */
+#section2 div article a:hover {
+    background-color: orange;
+    border: 1px solid orange;
+    color: black;
+}

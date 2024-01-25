@@ -1,0 +1,231 @@
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    max-width: 1440px;
+    justify-content: space-between;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#burger{
+    display: none;
+}
+
+/* MAIN */
+
+main{
+    max-width: 1140px;
+    justify-content: center;
+    padding: 0px 50px;
+    margin: auto;
+}
+
+/* ??? */
+main section div article{
+    justify-content: space-between;
+    margin: auto;
+}
+
+main #section1{
+    max-width: 1140px;
+}
+main #section1 div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+main #section2{
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    justify-content: center;
+}
+
+main #section2 article h2{
+    padding: 15px;
+}
+
+main #section2 article a{
+    color: gold;
+    border: 1px solid orange;
+    /* le border radius permet d'arrondir le bords de nos bordure */
+    border-radius: 30px;
+    /* Le padding permet de mettre de l'espace entre le contenu textuel et la bordure qui l'entour */
+    padding:10px 40px;
+}
+
+main #section2 article{
+    width: 100%;
+}
+
+main #section3 {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* Uhh center that shit NOW! */
+main #section3 h2{
+    padding-top: 25px;
+    text-align: center;
+} 
+
+main #section3 h3{
+    color: gold;
+}
+
+main #section3 div article a{
+    text-align: center;
+    justify-content: center;
+    color: gold;
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid gold;
+    /* le border radius permet d'arrondir le bords de nos bordure */
+    border-radius: 30px;
+    /* Le padding permet de mettre de l'espace entre le contenu textuel et la bordure qui l'entour */
+    padding: 10px 40px;
+    width: 60px;
+    margin: auto;
+}
+
+
+/* TO make image fit */
+main #section3 div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+main #section3 div article img{
+    width: 100%;
+}
+
+/* This is a footer, TRUST ME */
+footer{
+    background-color: #FFA500;
+}
+
+footer h2{
+    padding-top: 25px;
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer section{
+    text-align: center;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    max-width: 1140px;
+    padding: 0px 15px;
+}
+
+footer div article{
+    padding: 50px;
+}
+
+footer > p{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+}
+/* Todo, check what's working :sob: */
+/* tablet */
+@media screen and (max-width: 1024px) {
+    nav{
+        display: none;
+    }
+
+    #burger{
+        display: block;
+    }
+    main #section2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Is that the way to do it?? 
+    I spent like 45 minutes on this solution
+    grid-row*/
+    main #section2 img{
+        width: 100%;
+        grid-row: 2;
+    }
+
+    main #section3 img{
+        width: 100%;
+    }
+
+    main #section3 div{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section3 article:nth-child(1), 
+    #section3 article:nth-child(4){
+        grid-column: 1/3;
+    }
+
+    footer div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+/* Phone */
+@media screen and (max-width: 767px) {
+
+    footer div article{
+        padding: 0px;
+    }
+    
+    main #section1 div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    footer div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main #section3 div{
+        grid-template-columns: 1fr;
+    }
+
+    #section3 article:nth-child(1), 
+    #section3 article:nth-child(4){
+        grid-column: 1;
+    }
+}
